@@ -1,0 +1,229 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 680px){
+     .navigationbar{ min-height: 50px;}
+     .navigationbar::before{  min-height: 56px;}
+ }
+
+   
+.navigationbar::before{
+    background: url('https://media.istockphoto.com/id/979469030/photo/pastel-teal-grunge-texture-background.webp?b=1&s=170667a&w=0&k=20&c=_Fd8YwOL2kzZ9qCsCGa6RoQSqDnjkhdCMw9jaxX21Ro=') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    min-height: 150px;
+    width: 101%;
+    z-index: -1;
+   
+}
+
+.navigationbar{
+    
+
+    width: 100vw;
+    min-height: 150px;
+    border:1px solid rgb(0, 204, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.name>p{
+    font-family: 'Archivo', sans-serif;
+
+    
+    color: rgb(219, 0, 0);
+    font-weight: 700;
+    padding-left: 25px;
+    text-shadow: 2px 2px 5px rgb(251, 251, 251);
+font-size: 2.3rem;
+}
+.navbutton{
+    padding-right: 25px;
+    display: flex;
+    
+    gap: 10px;
+}.navbutton a{
+    color: rgb(219, 0, 0);
+    
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.navbutton a:hover{
+    color: black;
+    background-color: WHITE;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+}
+.navbutton ul{
+    display: flex;
+    
+    list-style: none;
+}
+.footc{
+    background-color: aqua;
+    display: flex;
+    border: 1px solid rgb(0, 255, 247);
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+width: 100vw;
+} 
+main{
+    display: flex;
+    justify-content: center;
+
+}
+.contentbox{
+    font-family: 'Archivo', sans-serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lemon', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Protest Guerrilla', sans-serif;
+font-family: 'Roboto', sans-serif;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 50%;
+  box-shadow: 5px 5px 10px rgb(55, 56, 56);
+  
+}
+.footc p{
+    font-size: 1.7rem;
+    color: white;
+}
+.content1{
+    display: flex;
+    overflow-x: none;
+    gap: 4vw
+}
+.content1>.box3>h1{
+    padding: 27px;
+}
+.content1>.box3>h2{
+    padding: 15px;
+}
+.content2>.box1>h1{
+    padding: 27px;
+}
+.content2>.box1>h2{
+    padding: 15px;
+}
+.content2>.box1>ul{
+    padding: 20px;
+}
+.content2>.box1>ol{
+    padding: 20px;
+}
+
+.content1>.box3>ul{
+    padding: 20px;
+}
+.content1>.box3>ol{
+    padding: 20px;
+}
+.content2{
+    display: flex;
+    overflow-x: none;
+    gap: 4vw;
+}
+.imagesource1{
+    box-shadow: 2px 2px 5px rgb(55, 56, 56);
+    border-radius:15px;
+    width: 100%;
+    height: 100%;
+}
+.imagesource2{
+    box-shadow: 2px 2px 5px rgb(55, 56, 56);
+    border-radius:15px;
+    width: 100%;
+    height:100%;
+}
+
+.imagesource1:hover{
+transform: scale(1.03);
+transition:all ;
+transition-duration: 0.1s;
+transition-timing-function: linear;
+transition-delay: 0s;
+cursor: pointer;
+
+}
+.imagesource2:hover{
+    transform: scale(1.03);
+    transition:all ;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    cursor:pointer;
+    
+    }
+
+.text{
+    padding: 30px;
+    width: 45%;
+}
+.box2{
+    box-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+    max-width: 380px;
+    max-height: 230px;
+    position: relative;
+    border-radius: 15px;
+   overflow: hidden;
+}
+.box2:hover{
+    transform: scale(1.03);
+}
+
+
+.box4{
+    box-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+    max-width: 380px;
+    max-height: 230px;
+    position: relative;
+    border-radius: 15px;
+   overflow: hidden;
+}
+.box4:hover{
+    transform: scale(1.03);
+}
+
+.overlay{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(71, 73, 72, 0.433);
+    opacity: 0;
+    transition:all ;
+   
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    cursor:pointer;
+}
+.overlay:hover {
+    opacity: 1;
+    }
+    .overlay>span{
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: white;
+    }
